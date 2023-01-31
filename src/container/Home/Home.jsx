@@ -64,231 +64,33 @@ const Home = () => {
             </h3>
           </div>
 
-          <div className="logo_slider overflow-x-hidden">
-            <div className="overflow flex overflow-hidden py-2 px-4">
-              <div className="logos_wrapper flex animate-logo-looper justify-around">
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
+          <div className=" overflow-x-hidden">
+            <div className="flex overflow-hidden overflow-x-auto py-2 px-4 scrollbar-hide">
+              <div className="flex justify-around">
+                <div className="ml-4 grid aspect-[30/9] place-items-center p-4">
                   <img
                     src={partnerAlmi}
                     alt="partner"
                     className="mx-8 h-6 w-28"
                   />
                 </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
+                <div className="ml-4 grid aspect-[30/9] place-items-center p-4">
+                  <img
+                    src={partnerMDU}
+                    alt="partner"
+                    className="mx-8 h-6 w-28"
+                  />
+                </div>
+                <div className="ml-4 grid aspect-[30/9] place-items-center p-4">
                   <img
                     src={partnerAlmi}
                     alt="partner"
                     className="mx-8 h-6 w-28"
                   />
                 </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
+                <div className="ml-4 grid aspect-[30/9] place-items-center p-4">
                   <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-              </div>
-              <div className="logos_wrapper flex animate-logo-looper justify-around">
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
-                    alt="partner"
-                    className="mx-8 h-6 w-28"
-                  />
-                </div>
-                <div className="logo_item ml-4 grid aspect-[30/9] place-items-center bg-indigo-300 p-4">
-                  <img
-                    src={partnerAlmi}
+                    src={partnerMDU}
                     alt="partner"
                     className="mx-8 h-6 w-28"
                   />
