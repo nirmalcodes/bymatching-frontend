@@ -58,7 +58,7 @@ const Home = () => {
         {/* partners section*/}
 
         <section className="partners_section py-16 px-0">
-          <div className="section_title mb-8">
+          <div className="section_title mb-8 pl-20">
             <h3 className="text-[34px] font-extrabold text-[#334155]">
               Partners.
             </h3>
