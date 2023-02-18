@@ -22,20 +22,19 @@ const Products = () => {
             </h5>
             <div className="my-3 h-[2px] max-w-[316px] bg-[#FFCD05]"></div>
             <p className="mb-12 h-fit max-w-[480px] text-justify text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Consectetur cursus leo cursus sed id. Sed aliquam turpis lacus ut
-              amet, in purus ut. Nec adipiscing vestibulum egestas libero
-              tristique tempus ut in tristique. Nisl neque, elementum at egestas
-              auctor vehicula pharetra est ullamcorper. Vitae tortor suspendisse
-              nulla consequat commodo ipsum phasellus elit. Ac, pharetra netus
-              dui parturient amet amet volutpat. Velit, velit consequat commodo
-              amet.
+              ByMatching gives students, companies and educational actors a
+              platform to gather on and then be matched and start collaborating
+              with each other.
               <br />
               <br />
-              Dui fermentum vivamus tempus consectetur. Eu ipsum lorem
-              quisque lectus cursus faucibus sit. Cursus amet, tellus leo orci
-              tincidunt proin porttitor donec. Nulla facilisis non suscipit
-              nunc, a, congue.
+              It was founded with the vision of simplifying collaboration
+              between business and higher education stakeholders. We think it
+              should be easy to establish contact with students if you want to
+              collaborate, but also to take part in the latest research, gain
+              new perspectives that can be put to practical use and meet future
+              talents early in their studies. It should also be easy for
+              students to get in touch with companies. Regardless of industry,
+              company size or geographic location.
             </p>
             <a
               href="#"
@@ -47,7 +46,7 @@ const Products = () => {
             </a>
           </div>
         </div>
-        <div className="mt-[188px] mb-36 flex flex-row items-center xl:justify-around">
+        <div className="mt-[188px] mb-36 flex flex-row items-center xl:justify-around flex-wrap">
           <div className="flex aspect-square w-[200px] flex-col items-center justify-center rounded-full bg-[#9FA2E7] p-8 text-center text-sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </div>
