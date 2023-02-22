@@ -1,31 +1,29 @@
 import React from "react";
 
-import bgPoster from "../../assets/images/bgPoster.png";
-import bgVideo from "../../assets/videos/Bymatching.mp4";
-import partnerAlmi from "../../assets/svg/almi_black.svg";
-import partnerMDU from "../../assets/svg/MDU_logotype_english.svg";
+import { SectionWrapper } from "../../components";
+import { images, videos } from "../../constants";
 
 const Home = () => {
   return (
     <>
-      <div className="min-h-screen pt-32">
+      <div className="min-h-screen pt-[75px] xl:pt-[90px]">
         {/* header section*/}
-        <div className="flex flex-row">
+        <div className="flex flex-row xl:pt-16">
           <div className="left flex flex-1 flex-col justify-center p-4 lg:w-1/2 lg:pl-7 xl:pl-20">
             <div className="mb-4 w-full max-w-[620px] text-3xl font-extrabold text-[#0F172A] lg:text-6xl">
               The fast way to find companies for student projects, and vice
               versa.
             </div>
-            <div className="mb-12 w-full max-w-[430px] text-lg text-[#0F172A]">
+            <div className="w-full max-w-[430px] text-lg text-[#0F172A]">
               We streamline contact between students and companies, to find the
               right match at the right time.
             </div>
-            <div className="flex flex-row flex-wrap items-center gap-x-8 gap-y-3">
+            <div className="mt-6 flex flex-row flex-wrap items-center gap-x-8 gap-y-2 xl:mt-12">
               <a
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-[#3341a9] py-5 px-12 text-white"
+                className="rounded-full bg-[#3341a9] py-3 px-12 text-white opacity-90 transition-all duration-300 hover:opacity-100"
               >
                 Create Account
               </a>
@@ -33,7 +31,7 @@ const Home = () => {
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="py-3 px-2 text-[#3341a9]"
+                className="p-2 text-[#3341a9] opacity-90 transition-all duration-300 hover:opacity-100"
               >
                 Subscribe to our newsletter
               </a>
@@ -42,14 +40,14 @@ const Home = () => {
           <div className="right hidden w-1/2 lg:flex">
             <div className="relative aspect-video w-full overflow-hidden rounded-tl-full rounded-bl-full">
               <video
-                poster={bgPoster}
+                poster={images.bgVideoPoster}
                 autoPlay
                 loop
                 muted
                 playsInline
                 className="pointer-events-none absolute top-0 left-0 h-full w-full object-cover"
               >
-                <source src={bgVideo} type="video/mp4" />
+                <source src={videos.bgVideo} type="video/mp4" />
               </video>
             </div>
           </div>
@@ -57,7 +55,7 @@ const Home = () => {
 
         {/* partners section*/}
 
-        <section className="partners_section py-16 px-0">
+        <section className="partners_section px-0 pb-16">
           <div className="section_title mb-8 pl-20">
             <h3 className="text-[34px] font-extrabold text-[#334155]">
               Partners.
@@ -69,28 +67,28 @@ const Home = () => {
               <div className="flex justify-around">
                 <div className="ml-4 grid aspect-[30/9] place-items-center p-4">
                   <img
-                    src={partnerAlmi}
+                    src={images.almiLogo}
                     alt="partner"
                     className="mx-8 h-6 w-28"
                   />
                 </div>
                 <div className="ml-4 grid aspect-[30/9] place-items-center p-4">
                   <img
-                    src={partnerMDU}
+                    src={images.mduLogo}
                     alt="partner"
                     className="mx-8 h-6 w-28"
                   />
                 </div>
                 <div className="ml-4 grid aspect-[30/9] place-items-center p-4">
                   <img
-                    src={partnerAlmi}
+                    src={images.almiLogo}
                     alt="partner"
                     className="mx-8 h-6 w-28"
                   />
                 </div>
                 <div className="ml-4 grid aspect-[30/9] place-items-center p-4">
                   <img
-                    src={partnerMDU}
+                    src={images.mduLogo}
                     alt="partner"
                     className="mx-8 h-6 w-28"
                   />
@@ -104,4 +102,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default SectionWrapper(Home, "home");

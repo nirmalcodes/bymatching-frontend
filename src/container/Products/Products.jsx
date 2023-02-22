@@ -1,4 +1,5 @@
 import React from "react";
+import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
 
 const Products = () => {
   return (
@@ -16,7 +17,7 @@ const Products = () => {
             />
           </div>
           <div className="flex w-full flex-col pr-[188px] text-[#F8FAFC] xl:flex-1">
-            <h5 className="max-w-[650px] text-[32px] font-bold">
+            <h5 className="subheader-text">
               A matching platform between companies, students and course
               managers.
             </h5>
@@ -46,7 +47,7 @@ const Products = () => {
             </a>
           </div>
         </div>
-        <div className="mt-[188px] mb-36 flex flex-row items-center xl:justify-around flex-wrap">
+        <div className="mt-[188px] mb-36 flex flex-row flex-wrap items-center xl:justify-around">
           <div className="flex aspect-square w-[200px] flex-col items-center justify-center rounded-full bg-[#9FA2E7] p-8 text-center text-sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </div>
@@ -113,4 +114,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default SectionWrapper(Products, "product");

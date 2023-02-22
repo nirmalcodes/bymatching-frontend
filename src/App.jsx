@@ -1,11 +1,16 @@
-import Footer from "./components/Footer/Footer";
-import Navbar from "./components/Navbar/Navbar";
-import AboutUs from "./container/AboutUs/AboutUs";
-import Blog from "./container/Blog/Blog";
-import ContactUs from "./container/ContactUs/ContactUs";
-import Home from "./container/Home/Home";
-import MakeItEasy from "./container/MakeItEasy/MakeItEasy";
-import Products from "./container/Products/Products";
+import { Route, Routes } from "react-router-dom";
+import { Navbar, Footer1 } from "./components";
+
+import {
+  Home1,
+  Products1,
+  MakeItEasy,
+  MakeItEasy1,
+  MakeItEasy2,
+  AboutUs1,
+  Blog1,
+  ContactUs1,
+} from "./container";
 
 const footerLinks = [
   {
@@ -60,18 +65,21 @@ const footerLinks = [
     ],
   },
 ];
+
 function App() {
   return (
     <>
       <div className="">
         <Navbar />
-        <Home />
-        <Products/>
-        <MakeItEasy />
-        <AboutUs/>
-        <Blog/>
-        <ContactUs />
-        <Footer linksData={footerLinks}/>
+        <Home1 />
+        <Products1 />
+
+        {/* point */}
+        <MakeItEasy2 />
+
+        <AboutUs1 />
+        <ContactUs1 />
+        <Footer1 linksData={footerLinks} />
       </div>
     </>
   );

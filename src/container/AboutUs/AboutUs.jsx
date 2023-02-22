@@ -16,7 +16,7 @@ const AboutUs = () => {
             />
           </div>
           <div className="flex w-full flex-col pr-[188px] text-[#F8FAFC] xl:flex-1">
-            <h5 className="max-w-[650px] text-[32px] font-bold">
+            <h5 className="subheader-text">
               Cooperation, curiosity and commitment.
             </h5>
             <div className="my-3 h-[2px] max-w-[316px] bg-[#FFCD05]"></div>

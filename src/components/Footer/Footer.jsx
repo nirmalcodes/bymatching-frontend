@@ -1,5 +1,5 @@
 import React from "react";
-import brandLogo from "../../assets/brand/company-logo.png";
+import { images } from "../../constants";
 import FooterLinks from "../FooterLinks/FooterLinks";
 import SocialMediaBtn from "../SocialMediaBtn/SocialMediaBtn";
 
@@ -10,7 +10,7 @@ const Footer = (props) => {
         <div className="flex flex-row flex-wrap gap-x-4">
           <div className="mb-6 h-full w-1/3">
             <img
-              src={brandLogo}
+              src={images.brandLogo}
               alt="ByMatching"
               className="h-auto w-full max-w-[220px]"
             />
@@ -57,7 +57,7 @@ const Footer = (props) => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-between text-[#F8FAFC] mt-6">
+        <div className="mt-6 flex items-center justify-between text-[#F8FAFC]">
           <div className="py-4 text-xs">
             ©{new Date().getFullYear()}{" "}
             <span className="font-semibold">ByMatching AB</span> . All Rights

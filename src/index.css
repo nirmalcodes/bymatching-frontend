@@ -3,17 +3,62 @@
 @tailwind utilities;
 
 @layer components {
-  .mobile-navigation-toggler {
-    @apply absolute top-8 right-8 z-[9999] flex aspect-square w-8 items-center justify-center lg:hidden;
+  /* common */
+  .header-text {
+    @apply text-5xl font-extrabold  xl:text-6xl;
   }
-  .mobile-navigation {
-    @apply fixed inset-y-0 right-0 left-1/3  z-[1000] flex flex-col justify-center gap-8 bg-[#000000]/25 py-10 px-8 backdrop-blur-lg lg:relative lg:inset-0 lg:translate-x-0 lg:flex-row lg:gap-12 lg:bg-transparent lg:py-8 lg:px-12 lg:backdrop-blur-none xl:gap-20;
+
+  .subheader-text {
+    @apply max-w-[650px] text-[32px] font-bold;
   }
-  .pause-animate {
-    animation-play-state: paused;
+
+  .divider {
+    @apply h-[1px] w-full bg-white/25;
+  }
+
+  /* navbar */
+  .navbar {
+    @apply fixed left-0 right-0 z-[1000] flex items-center justify-between bg-[#E2E8F0]/80 p-4 backdrop-blur-sm xl:px-20;
+  }
+
+  .navbar-brand {
+    @apply mr-4 min-w-[132px] max-w-[132px] xl:w-[180px] xl:max-w-[180px];
+  }
+
+  .navigation-toggler {
+    @apply absolute top-6 right-6 z-[9999] flex aspect-square w-8 items-center justify-center xl:hidden;
+  }
+
+  .nav {
+    @apply fixed right-0 top-0 bottom-0 z-[1000] flex h-screen w-[70%] flex-col bg-gray-100 px-4 pt-[72px] shadow-xl transition-all duration-300 lg:w-[30%] xl:relative xl:inset-auto xl:h-auto xl:w-auto xl:translate-x-0 xl:flex-row xl:bg-transparent xl:p-0 xl:shadow-none;
+  }
+
+  .nav-list {
+    @apply flex w-full flex-col items-start justify-start xl:h-auto xl:flex-row xl:items-center xl:justify-center;
+  }
+
+  .nav-list-item {
+    @apply my-4 mx-4 font-medium xl:mx-12 xl:my-0;
   }
 
   .nav-link {
-    @apply relative text-[#3341a9] after:absolute after:left-0 after:-bottom-2 after:block after:h-[2px] after:w-0 after:bg-[#3341a9] after:duration-300 hover:after:w-full
+    @apply relative text-[#3341a9] opacity-80 after:absolute after:left-0 after:-bottom-2 after:block after:h-[2px] after:w-0 after:bg-[#3341a9] after:duration-300 hover:opacity-100 hover:after:w-full;
+  }
+
+  .navbar-btn {
+    @apply w-fit whitespace-nowrap rounded-full border border-[#3341a9] py-2 px-8 text-center font-medium text-[#3341a9] transition-all duration-300 hover:border-[#3341a9] hover:bg-[#3341a9] hover:text-white;
+  }
+
+  .backdrop {
+    @apply absolute inset-0 z-50 h-screen w-full bg-black/40 transition-all duration-300 xl:hidden xl:-translate-y-0;
+  }
+
+  /* about us */
+  .circle-item {
+    @apply flex aspect-square w-[200px] flex-col items-center justify-center rounded-full bg-[#9FA2E7] p-8 text-center text-sm;
+  }
+
+  .flow-indicator {
+    @apply ml-6 h-14 w-14 rotate-90 text-white sm:mb-4 sm:ml-0 sm:rotate-0;
   }
 }
