@@ -3,44 +3,13 @@ import { images } from "../../constants";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/outline";
 import { Link, useLocation } from "react-router-dom";
 
-const navLinks = [
-  {
-    linkName: "Home",
-    linkURL: "header",
-  },
-  {
-    linkName: "Our Product",
-    linkURL: "product",
-  },
-  {
-    linkName: "About Us",
-    linkURL: "about",
-  },
-  {
-    linkName: "Contact Us",
-    linkURL: "contact",
-  },
-];
-
-const Navbar = (props) => {
+const Navbar = ({ navLinks }) => {
   const [navToggle, setNavToggle] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  const pageScrolled = () => {
-    const scrollValue = document.documentElement.scrollTop;
-    if (scrollValue > 80) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
-
-  window.addEventListener("scroll", pageScrolled);
-
   const location = useLocation();
+
   return (
     <>
-      <header className={`navbar ${scrolled ? "navbar-blur" : ""}`}>
+      <header className={`navbar`}>
         <div>
           <Link to="/">
             <img
@@ -72,17 +41,18 @@ const Navbar = (props) => {
         >
           <ul className="nav-list">
             {navLinks.map((navLink, index) => (
-              <li className="nav-list-item" key={`link-${navLink?.linkURL}`}>
-                <a
-                  href={`#${navLink?.linkURL}`}
+              <li className="nav-list-item" key={`link-item-${index}`}>
+                <Link
+                  to={navLink.path}
                   className={`nav-link ${
-                    props.activeSection === navLink?.linkURL
+                    location.pathname === navLink.path
                       ? "opacity-100 after:w-full"
                       : ""
                   }`}
+                  key={`link-${index}`}
                 >
-                  {navLink?.linkName}
-                </a>
+                  {navLink.name}
+                </Link>
               </li>
             ))}
           </ul>

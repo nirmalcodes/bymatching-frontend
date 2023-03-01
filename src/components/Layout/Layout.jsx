@@ -10,12 +10,17 @@ const navLinksList = [
     path: "/",
   },
   {
-    name: "About",
-    path: "/about",
+    name: "Our Product",
+    path: "/ourproduct",
   },
   {
-    name: "Contact",
-    path: "/contact",
+    name: "About Us",
+    path: "/aboutus",
+  },
+
+  {
+    name: "Contact Us",
+    path: "/contactus",
   },
 ];
 

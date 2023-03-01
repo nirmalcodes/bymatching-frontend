@@ -59,21 +59,19 @@ const AboutUs = () => {
         </div>
       </div>
 
-
-      <div className="min-h-screen xl:py-9">
+      <div className="min-h-screen xl:pt-9 xl:pb-28 pb-16">
         <div className="mx-auto p-5 xl:w-[70%]">
           <div className="mb-8 xl:mb-16">
             <h3 className="mb-6 text-4xl font-semibold">The team</h3>
             <p className="text-lg">
               We are a team with{" "}
-              <span className="font-bold"> many years of experience</span> in
-              <span className="font-bold">
-                innovation, sales, research
-              </span> and <span className="font-bold">development</span>. We
-              have developed a solution that makes it easy for companies and
-              organizations to find collaboration with students of higher
-              education. We also want students to have a larger selection of
-              companies to collaborate with.
+              <span className="font-bold"> many years of experience</span> in{" "}
+              <span className="font-bold">innovation, sales, research</span> and{" "}
+              <span className="font-bold">development</span>. We have developed
+              a solution that makes it easy for companies and organizations to
+              find collaboration with students of higher education. We also want
+              students to have a larger selection of companies to collaborate
+              with.
               <br />
               <br />
               We are fully aware of the difficulties that both society and

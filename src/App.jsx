@@ -16,18 +16,18 @@ function App() {
             }
           />
           <Route
-            path="/aboutus"
-            element={
-              <Layout>
-                <AboutUs />
-              </Layout>
-            }
-          />
-          <Route
             path="/ourproduct"
             element={
               <Layout>
                 <OurProduct />
+              </Layout>
+            }
+          />
+          <Route
+            path="/aboutus"
+            element={
+              <Layout>
+                <AboutUs />
               </Layout>
             }
           />

@@ -25,3 +25,5 @@ export { default as TeamMember } from "./TeamMember/TeamMember";
 export { default as Layout } from "./Layout/Layout";
 
 export { default as Loader } from "./Loader/Loader";
+
+export { default as ProductRowView } from "./ProductRowView/ProductRowView";
