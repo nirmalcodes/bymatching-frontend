@@ -1,10 +1,10 @@
 import React from "react";
-import BlogPostCard from "../../components/BlogPostCard/BlogPostCard";
+import { BlogPostCard } from "../../components";
 
 const Blog = () => {
   return (
     <>
-      <div className="min-h-screen py-28 pl-20">
+      <div className="min-h-screen py-28 xl:pl-20">
         <div className="mb-16 flex flex-row items-center justify-between">
           <h3 className="text-6xl font-extrabold">Blog.</h3>
           <a

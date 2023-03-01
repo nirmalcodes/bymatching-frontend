@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { images } from '../../constants';
+import { images } from "../../constants";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/outline";
+import { Link, useLocation } from "react-router-dom";
 
 const navLinks = [
   {
     linkName: "Home",
-    linkURL: "home",
+    linkURL: "header",
   },
   {
     linkName: "Our Product",
@@ -23,15 +24,31 @@ const navLinks = [
 
 const Navbar = (props) => {
   const [navToggle, setNavToggle] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  const pageScrolled = () => {
+    const scrollValue = document.documentElement.scrollTop;
+    if (scrollValue > 80) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  window.addEventListener("scroll", pageScrolled);
+
+  const location = useLocation();
   return (
     <>
-      <header className="navbar">
+      <header className={`navbar ${scrolled ? "navbar-blur" : ""}`}>
         <div>
-          <img
-            src={images.brandLogo}
-            alt="ByMatching"
-            className="navbar-brand"
-          />
+          <Link to="/">
+            <img
+              src={images.brandLogo}
+              alt="ByMatching"
+              className="navbar-brand"
+            />
+          </Link>
         </div>
         <button
           className="navigation-toggler"
@@ -56,17 +73,30 @@ const Navbar = (props) => {
           <ul className="nav-list">
             {navLinks.map((navLink, index) => (
               <li className="nav-list-item" key={`link-${navLink?.linkURL}`}>
-                <a href={`#${navLink?.linkURL}`} className="nav-link">
+                <a
+                  href={`#${navLink?.linkURL}`}
+                  className={`nav-link ${
+                    props.activeSection === navLink?.linkURL
+                      ? "opacity-100 after:w-full"
+                      : ""
+                  }`}
+                >
                   {navLink?.linkName}
                 </a>
               </li>
             ))}
           </ul>
-          <a href="#" className="navbar-btn m-4 xl:mx-12 xl:my-0 xl:hidden">
+          <a
+            href="https://app.bymatching.se/"
+            className="navbar-btn m-4 xl:mx-12 xl:my-0 xl:hidden"
+          >
             Log in
           </a>
         </nav>
-        <a href="#" className="navbar-btn hidden px-12 xl:inline-block">
+        <a
+          href="https://app.bymatching.se/"
+          className="navbar-btn hidden px-12 xl:inline-block"
+        >
           Log in
         </a>
         <div

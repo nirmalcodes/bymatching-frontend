@@ -13,6 +13,7 @@ const ImageContentRow = (props) => {
               <img
                 src={props.imgURL ? props.imgURL : images.imgPlaceholder}
                 alt={props.title ? props.title : "image_placeholder"}
+                loading="lazy"
                 className="h-auto max-h-[600px] min-h-[260px] w-full object-cover xl:aspect-video"
               />
             </div>
@@ -23,7 +24,7 @@ const ImageContentRow = (props) => {
             </h3>
             <div className="mb-3 h-[2px] w-[104px] bg-[#FF00FF]" />
             <p
-              className=" font-medium pr-20"
+              className=" pr-20 font-medium"
               dangerouslySetInnerHTML={dangerousText}
             />
           </div>
@@ -35,6 +36,7 @@ const ImageContentRow = (props) => {
               <img
                 src={props.imgURL ? props.imgURL : images.imgPlaceholder}
                 alt={props.title ? props.title : "image_placeholder"}
+                loading="lazy"
                 className="h-auto max-h-[600px] min-h-[260px] w-full object-cover xl:aspect-video"
               />
             </div>
@@ -45,7 +47,7 @@ const ImageContentRow = (props) => {
             </h3>
             <div className="mb-3 h-[2px] w-[104px] bg-[#FF00FF]" />
             <p
-              className=" font-medium pr-20"
+              className=" pr-20 font-medium"
               dangerouslySetInnerHTML={dangerousText}
             />
           </div>

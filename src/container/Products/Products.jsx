@@ -1,28 +1,32 @@
 import React from "react";
-import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
+import { CircleItem, Divider } from "../../components";
+import { ArrowLongRightIcon } from "@heroicons/react/24/solid";
+import MakeItEasy from "../MakeItEasy/MakeItEasy";
 
 const Products = () => {
   return (
     <>
-      <div className="min-h-screen bg-[#001193] py-28">
-        <h3 className="mb-20 pl-20 text-6xl font-extrabold text-[#F8FAFC]">
-          Our Products
+      <div className="min-h-screen bg-[#001193] py-24 xl:py-28">
+        <h3 className="header-text px-5 text-[#F8FAFC] xl:pl-20">
+          Our Product.
         </h3>
-        <div className="flex flex-row flex-wrap gap-x-[60px]">
-          <div className="flex aspect-video w-full overflow-hidden xl:mb-[68px] xl:flex-1 xl:rounded-tr-full xl:rounded-br-full">
+
+        <div className="mt-7 flex flex-row flex-wrap gap-x-10 gap-y-4 xl:mt-20">
+          <div className="flex w-full overflow-hidden  xl:flex-1 xl:rounded-tr-full xl:rounded-br-full">
             <img
               src="https://api.lorem.space/image/furniture?w=1280&h=720"
               alt=""
-              className="h-auto w-full object-cover"
+              loading="lazy"
+              className="h-auto max-h-[600px] min-h-[260px] w-full object-cover xl:aspect-video"
             />
           </div>
-          <div className="flex w-full flex-col pr-[188px] text-[#F8FAFC] xl:flex-1">
+          <div className="flex w-full flex-col px-5 text-[#F8FAFC] sm:pl-10 xl:flex-1 xl:pl-5">
             <h5 className="subheader-text">
               A matching platform between companies, students and course
               managers.
             </h5>
-            <div className="my-3 h-[2px] max-w-[316px] bg-[#FFCD05]"></div>
-            <p className="mb-12 h-fit max-w-[480px] text-justify text-lg">
+            <Divider className={"my-3 h-[2px] max-w-[316px] bg-[#FFCD05]"} />
+            <p className="mb-6 mt-4 h-fit max-w-[480px] text-justify text-lg line-clamp-[10] lg:mb-8 xl:mt-0">
               ByMatching gives students, companies and educational actors a
               platform to gather on and then be matched and start collaborating
               with each other.
@@ -41,77 +45,26 @@ const Products = () => {
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-fit rounded-full border-2 px-16 py-5"
+              className="w-fit rounded-full border-2 px-16 py-5 transition-all duration-300 hover:bg-[#F8FAFC] hover:text-[#3341a9] xl:mt-auto"
             >
               Read more
             </a>
           </div>
         </div>
-        <div className="mt-[188px] mb-36 flex flex-row flex-wrap items-center xl:justify-around">
-          <div className="flex aspect-square w-[200px] flex-col items-center justify-center rounded-full bg-[#9FA2E7] p-8 text-center text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </div>
-          <div className="text-white">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1}
-              stroke="currentColor"
-              className="h-14 w-14"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-              />
-            </svg>
-          </div>
-          <div className="flex aspect-square w-[200px] flex-col items-center justify-center rounded-full bg-[#9FA2E7] p-8 text-center text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </div>
-          <div className="text-white">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1}
-              stroke="currentColor"
-              className="h-14 w-14"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-              />
-            </svg>
-          </div>
-          <div className="flex aspect-square w-[200px] flex-col items-center justify-center rounded-full bg-[#9FA2E7] p-8 text-center text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </div>
-          <div className="text-white">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1}
-              stroke="currentColor"
-              className="h-14 w-14"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-              />
-            </svg>
-          </div>
-          <div className="flex aspect-square w-[200px] flex-col items-center justify-center rounded-full bg-[#9FA2E7] p-8 text-center text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </div>
+
+        <div className="mt-10 mb-8 flex flex-row flex-wrap items-center justify-center gap-y-4 px-5 sm:justify-around sm:px-10 xl:mt-28">
+          <CircleItem caption="1" />
+          <ArrowLongRightIcon className="flow-indicator" />
+          <CircleItem caption="2" />
+          <ArrowLongRightIcon className="flow-indicator" />
+          <CircleItem caption="3" />
+          <ArrowLongRightIcon className="flow-indicator" />
+          <CircleItem caption="4" />
         </div>
       </div>
+      <MakeItEasy />
     </>
   );
 };
 
-export default SectionWrapper(Products, "product");
+export default Products;
