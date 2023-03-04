@@ -1,15 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { images } from "../../constants";
+import i18next from "i18next";
+import { useTranslation } from "react-i18next";
 
 const LanguageChanger = () => {
   const [language, setLanguage] = useState(
-    localStorage.getItem("lang") || "en-gb"
+    localStorage.getItem("lang") || "en-GB"
   );
+
   const [languageDropdown, setLanguageDropdown] = useState(false);
 
   useEffect(() => {
     localStorage.setItem("lang", language);
   }, [language]);
+
+  const handleLanguageToggle = (lng) => {
+    i18next.changeLanguage(lng);
+  };
 
   return (
     <>
@@ -19,7 +26,7 @@ const LanguageChanger = () => {
             className="absolute left-0 top-0 z-[8888] h-9 w-9"
             onClick={() => setLanguageDropdown(!languageDropdown)}
           >
-            {language === "en-gb" && (
+            {language === "en-GB" && (
               <img
                 src={images.ukFlagSvg}
                 alt="UK_Flag"
@@ -45,12 +52,13 @@ const LanguageChanger = () => {
                 alt="UK_Flag"
                 className="language-dropdown-item"
                 onClick={() => {
-                  setLanguage("en-gb");
+                  setLanguage("en-GB");
                   setLanguageDropdown(!languageDropdown);
+                  i18next.changeLanguage("en-GB");
                 }}
               />
             )}
-            {language === "en-gb" && (
+            {language === "en-GB" && (
               <img
                 src={images.swedenFlagSvg}
                 alt="Sweden_Flag"
@@ -58,6 +66,7 @@ const LanguageChanger = () => {
                 onClick={() => {
                   setLanguage("sv");
                   setLanguageDropdown(!languageDropdown);
+                  i18next.changeLanguage("sv");
                 }}
               />
             )}

@@ -1,10 +1,16 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
-
 import { images, videos } from "../../constants";
+import { LanguageOptions } from "../../components";
+
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const Header = () => {
-  let { t } = useTranslation();
+  const { t } = useTranslation();
+
+  const handleClick = (e) => {
+    i18next.changeLanguage(e.target.value);
+  };
 
   return (
     <>
@@ -13,12 +19,10 @@ const Header = () => {
           <div className="absolute z-20 w-full xl:relative xl:w-1/2">
             <div className="px-5 xl:pl-20">
               <h3 className="mb-4 w-full max-w-[620px] text-3xl font-extrabold text-[#F8FAFC] lg:text-6xl xl:mb-6 xl:text-[#0F172A]">
-                The fast way to find companies for student projects, and vice
-                versa.
+                {t("The fast way to find")}
               </h3>
               <p className="mb-10 w-full max-w-[430px] text-lg font-medium text-[#F8FAFC] xl:mb-16 xl:text-[#0F172A]">
-                We streamline contact between students and companies, to find
-                the right match at the right time.
+                {t("We streamline contact")}
               </p>
               <div className="flex flex-row flex-wrap items-center gap-x-8 gap-y-2 xl:mt-12">
                 <a

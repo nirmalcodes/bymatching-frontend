@@ -17,16 +17,13 @@ import swedenFlagSvg from "../assets/images/Flag_of_Sweden.svg";
 
 import imgPlaceholder from "../assets/images/Placeholder.svg";
 
-import students1 from "../assets/images/students1.jpg";
-import students2 from "../assets/images/students2.jpg";
+import students from "../assets/images/students.jpg";
 import studentsFree from "../assets/images/studentsFree.jpg";
 
-import companies1 from "../assets/images/companies1.jpg";
-import companies2 from "../assets/images/companies2.jpg";
+import companies from "../assets/images/companies.jpg";
 import companiesFree from "../assets/images/companiesFree.jpg";
 
-import course_managers1 from "../assets/images/course_managers1.jpg";
-import course_managers2 from "../assets/images/course_managers2.jpg";
+import course_managers from "../assets/images/course_managers.jpg";
 import course_managersFree from "../assets/images/course_managersFree.jpg";
 
 import background_shapes from "../assets/images/background_shapes.jpg";
@@ -44,14 +41,11 @@ export default {
   swedenFlag,
   swedenFlagSvg,
   imgPlaceholder,
-  students1,
-  students2,
+  students,
   studentsFree,
-  companies1,
-  companies2,
+  companies,
   companiesFree,
-  course_managers1,
-  course_managers2,
+  course_managers,
   course_managersFree,
   background_shapes,
 };

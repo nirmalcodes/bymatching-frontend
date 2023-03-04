@@ -15,14 +15,6 @@ const footerLinks = [
         title: "The team",
         linkUrl: "#",
       },
-      {
-        title: "FAQ",
-        linkUrl: "#",
-      },
-      {
-        title: "Blog",
-        linkUrl: "#",
-      },
     ],
   },
   {

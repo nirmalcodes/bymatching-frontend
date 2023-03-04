@@ -19,7 +19,7 @@ const MakeItEasy = () => {
 
         <div className="grid gap-y-12 xl:gap-y-28">
           <ImageContentRow
-            imgURL={images.studentsFree}
+            imgURL={images.students}
             title="For students."
             content="Are you studying a course where a part requires collaboration with a company? Then you have to have good foresight and planning, not to mention a good network. It often ends with you stressing out a collaboration or you have to do the work ABOUT a company and without their participation.
             
@@ -29,13 +29,13 @@ const MakeItEasy = () => {
           <ImageContentRow
             inverted={true}
             title="For companies."
-            imgURL={images.companiesFree}
+            imgURL={images.companies}
             content="The advantages of student cooperation are many. It gives you the opportunity to increase awareness of your company and also find new employees and develop with the latest research. But it is not simple. Which university or college has courses in the specific subject? Are there private actors that I can turn to? Who should I contact? ByMatching solves this, we help you all the way."
           />
 
           <ImageContentRow
             title="For course managers."
-            imgURL={images.course_managersFree}
+            imgURL={images.course_managers}
             content={`
             The service streamlines your work so that you can concentrate on things that are important. Most of the work is done by the student. They are the ones to look for companies and match.
             

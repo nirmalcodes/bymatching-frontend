@@ -27,3 +27,5 @@ export { default as Layout } from "./Layout/Layout";
 export { default as Loader } from "./Loader/Loader";
 
 export { default as ProductRowView } from "./ProductRowView/ProductRowView";
+
+export { default as LanguageOptions } from "./LanguageOptions/LanguageOptions";
