@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import { images } from "../../constants";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/outline";
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Navbar = ({ navLinks }) => {
   const [navToggle, setNavToggle] = useState(false);
   const location = useLocation();
+
+  const { t } = useTranslation();
 
   return (
     <>
@@ -51,7 +54,7 @@ const Navbar = ({ navLinks }) => {
                   }`}
                   key={`link-${index}`}
                 >
-                  {navLink.name}
+                  {t(navLink.name)}
                 </Link>
               </li>
             ))}
@@ -60,14 +63,14 @@ const Navbar = ({ navLinks }) => {
             href="https://app.bymatching.se/"
             className="navbar-btn m-4 xl:mx-12 xl:my-0 xl:hidden"
           >
-            Log in
+            {t("Log in")}
           </a>
         </nav>
         <a
           href="https://app.bymatching.se/"
           className="navbar-btn hidden px-12 xl:inline-block"
         >
-          Log in
+          {t("Log in")}
         </a>
         <div
           className={`backdrop ${

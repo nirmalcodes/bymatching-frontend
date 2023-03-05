@@ -1,8 +1,11 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { TeamMember } from "../../components";
 import { images } from "../../constants";
 
 const AboutUs = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="min-h-screen bg-[#3341a9] text-[#f1f1f1]">
@@ -15,7 +18,7 @@ const AboutUs = () => {
           <div className="absolute top-0 left-0 z-30 grid h-full w-full place-items-center bg-black/30" />
           <div className="absolute top-0 left-0 z-30 grid h-full w-full place-items-center">
             <h2 className="mb-6 text-center text-6xl font-bold text-white drop-shadow-2xl xl:text-8xl">
-              About Us
+              {t("About Us")}
             </h2>
           </div>
         </div>
@@ -59,7 +62,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="min-h-screen xl:pt-9 xl:pb-28 pb-16">
+      <div className="min-h-screen pb-16 xl:pt-9 xl:pb-28">
         <div className="mx-auto p-5 xl:w-[70%]">
           <div className="mb-8 xl:mb-16">
             <h3 className="mb-6 text-4xl font-semibold">The team</h3>

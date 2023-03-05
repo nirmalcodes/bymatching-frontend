@@ -1,8 +1,11 @@
 import React from "react";
 import { images } from "../../constants";
 import { ProductRowView } from "../../components";
+import { useTranslation } from "react-i18next";
 
 const OurProduct = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="min-h-screen">
@@ -16,7 +19,7 @@ const OurProduct = () => {
           {/* <div className="absolute top-0 left-0 z-30 grid h-full w-full place-items-center bg-black/30" /> */}
           <div className="absolute top-0 left-0 z-30 grid h-full w-full place-items-center">
             <h2 className="mb-6 text-center text-6xl font-bold text-white drop-shadow-2xl xl:text-8xl">
-              Our Product
+              {t("Our Product")}
             </h2>
           </div>
         </div>

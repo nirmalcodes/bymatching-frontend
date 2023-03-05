@@ -25,7 +25,7 @@ const ScrollToTop = () => {
     <>
       {scrollToTop && (
         <div
-          className="fixed bottom-5 right-5 z-[9999] grid h-9 w-9 place-items-center rounded-full bg-white outline outline-1 outline-white xl:outline-none"
+          className="fixed bottom-5 right-5 z-[9999] grid h-9 w-9 place-items-center rounded-full bg-white outline outline-1 outline-white xl:outline-none drop-shadow-lg"
           onClick={scrollUp}
         >
           <ChevronUpIcon className="h-6 w-6 text-black" strokeWidth={3} />

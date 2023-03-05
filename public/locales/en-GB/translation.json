@@ -1,5 +1,33 @@
 {
+  "Home": "Home",
+  "Our Product": "Our Product",
+  "About Us" : "About Us",
+  "Contact Us" : "Contact Us",
+
+  "Log in" : "Log in",
+
   "The fast way to find": "The fast way to find companies for student projects, and vice versa.",
   "We streamline contact": "We streamline contact between students and companies, to find the right match at the right time.",
-  "Create Account": "Create Account"
+
+  "Create Account": "Create Account",
+
+  "A matching platform" : "A matching platform between companies, students and course managers.",
+  "ByMatching gives students, companies" : "ByMatching gives students, companies and educational actors a platform to gather on and then be matched and start collaborating with each other. \n \n It was founded with the vision of simplifying collaboration between business and higher education stakeholders. We think it should be easy to establish contact with students if you want to collaborate, but also to take part in the latest research, gain new perspectives that can be put to practical use and meet future talents early in their studies. It should also be easy for students to get in touch with companies. Regardless of industry, company size or geographic location. \n \n Our platform digitizes and streamlines the contact between student and company or organization. With ByMatching, users can resource-efficiently find the right match at the right time.",
+
+  "Read more" : "Read more",
+
+  "We make it easier" : "We make it easier for all parties.",
+  "A collaboration between students and companies" : "A collaboration between students and companies has advantages in both directions. Finding a good collaboration can be complicated and take time, let us take care of that instead.",
+
+  "For students" : "For students.",
+  "Are you studying a course where a" : "Are you studying a course where a part requires collaboration with a company? Then you have to have good foresight and planning, not to mention a good network. It often ends with you stressing out a collaboration or you have to do the work ABOUT a company and without their participation.\n \n We at Bymatching make sure that you get a match within 48 hours. Simple and stress-free.",
+
+  "For companies" : "For companies.",
+  "The advantages of student cooperation" : "The advantages of student cooperation are many. It gives you the opportunity to increase awareness of your company and also find new employees and develop with the latest research. But it is not simple. Which university or college has courses in the specific subject? Are there private actors that I can turn to? Who should I contact? ByMatching solves this, we help you all the way.",
+
+  "For course managers" : "For course managers.",
+  "The service streamlines your work" : "The service streamlines your work so that you can concentrate on things that are important. Most of the work is done by the student. They are the ones to look for companies and match.\n \n For you as the course manager, it is \"business as usual\", but without all the frustration of finding collaboration partners for your students.",
+
+  "The team behind" : "The team behind ByMatching.",
+  "Cooperation, curiosity" : "Cooperation, curiosity and commitment."
 }

@@ -1,5 +1,33 @@
 {
+  "Home": "Hem",
+  "Our Product": "Vår produkt",
+  "About Us" : "Om oss",
+  "Contact Us" : "Kontakta oss",
+
+  "Log in" : "Logga in",
+
   "The fast way to find": "Det snabba sättet att hitta företag till studentprojekt, och vice versa.",
   "We streamline contact": "Vi effektiviserar kontakten mellan studenter och företag, för att hitta rätt match vid rätt tidpunkt.",
-  "Create Account": "Skapa konto"
+
+  "Create Account": "Skapa konto",
+  
+  "A matching platform" : "En matchnings plattform mellan företag, studenter och kursansvariga.",
+  "ByMatching gives students, companies" : "ByMatching ger student, företag och utbildningsaktörer en plattform att samlas på för att sedan matchas och börja samverka med varandra. \n \n Det grundades med visionen att förenkla samverkan mellan näringsliv och utbildningsaktörer av högre utbildning. Vi tycker att det ska vara enkelt att etablera kontakt med studenter om man vill samverka, men även att ta del av det senaste inom forskningen, få nya infallsvinklar som kan komma till praktisk användning och möta framtida talanger tidigt i deras studier. Även för studenter ska det vara enkelt att komma i kontakt med företag. Oavsett bransch, storlek på företag eller geografisk läge. \n \n Vår plattform digitaliserar och effektiviserar kontakten mellan student samt företag eller organisation. Med ByMatching kan användarna på ett resurseffektivt sätt hitta rätt match vid rätt tidpunkt.",
+
+  "Read more" : "Läs mer",
+
+  "We make it easier" : "Vi underlättar för alla parter.",
+  "A collaboration between students and companies" : "Ett samarbete mellan studenter och företag har fördelar åt båda håll. Att hitta ett bra samarbete kan vara krångligt och ta tid, låt oss ta hand om det istället.",
+
+  "For students" : "För studenter.",
+  "Are you studying a course where a" : "Studerar du en kurs där ett delmoment kräver samverkan med ett företag? Då måste man ha bra framförhållning och planering, för att inte tala om ett bra nätverk. Det slutar ofta med att du stressar fram ett samarbete eller så får du göra arbetet OM ett företag och utan deras medverkan. \n \n Vi på Bymatching ser till att du inom 48 timmar får en match. Enkelt och utan stress.",
+
+  "For companies" : "För företag.",
+  "The advantages of student cooperation" : "Fördelarna med studentsamverkan är många. Det ger dig möjlighet att öka kännedom om ert företag och även hitta nya medarbetare samt utvecklas med den senaste forskningen. Men det är inte enkelt. Vilket universitet eller högskola har kurser inom det specifika ämnet? Finns det privata aktörer som jag kan vända mig till? Vem ska jag kontakta? Detta löser ByMatching, vi hjälper dig hela vägen.",
+
+  "For course managers" : "För kursansvariga.",
+  "The service streamlines your work" : "Tjänsten effektiviserar ditt arbete så att du kan koncentrera dig på sådant som är viktigt. Det mesta av arbetet sköts av studenten. Det är de som ska leta efter företag och matcha sig. \n \n För dig som kursansvarig är det \"business as usual\", men utan all frustration att hitta samarbetspartners åt dina studenter.",
+
+  "The team behind" : "Teamet bakom ByMatching",
+  "Cooperation, curiosity" : "Samverkan, nyfikenhet och engagemang."
 }

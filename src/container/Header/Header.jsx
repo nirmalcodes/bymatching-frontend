@@ -1,16 +1,10 @@
 import React from "react";
 import { images, videos } from "../../constants";
-import { LanguageOptions } from "../../components";
 
 import { useTranslation } from "react-i18next";
-import i18next from "i18next";
 
 const Header = () => {
   const { t } = useTranslation();
-
-  const handleClick = (e) => {
-    i18next.changeLanguage(e.target.value);
-  };
 
   return (
     <>
