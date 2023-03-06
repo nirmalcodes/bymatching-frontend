@@ -1,5 +1,5 @@
 import React from "react";
-import { CircleItem, Divider } from "../../components";
+import { CircleItem, Divider, TextFormatter } from "../../components";
 import { ArrowLongRightIcon } from "@heroicons/react/24/solid";
 import MakeItEasy from "../MakeItEasy/MakeItEasy";
 import { useTranslation } from "react-i18next";
@@ -25,9 +25,10 @@ const Products = () => {
           <div className="flex w-full flex-col px-5 text-[#F8FAFC] sm:pl-10 xl:flex-1 xl:pl-5">
             <h5 className="subheader-text">{t("A matching platform")}</h5>
             <Divider className={"my-3 h-[2px] max-w-[316px] bg-[#FFCD05]"} />
-            <p className="mb-6 mt-4 h-fit max-w-[480px] text-justify text-lg line-clamp-[10] lg:mb-8 xl:mt-0">
-              {t("ByMatching gives students, companies")}
-            </p>
+            <TextFormatter
+              className="mb-6 mt-4 h-fit max-w-[480px] text-justify text-lg line-clamp-[10] lg:mb-8 xl:mt-0"
+              content={t("ByMatching gives students, companies")}
+            />
             <a
               href="#"
               target="_blank"

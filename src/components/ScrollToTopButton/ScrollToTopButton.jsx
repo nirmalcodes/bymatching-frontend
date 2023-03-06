@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ChevronUpIcon } from "@heroicons/react/24/outline";
 
-const ScrollToTop = () => {
+const ScrollToTopButton = () => {
   const [scrollToTop, setScrollToTop] = useState(false);
 
   useEffect(() => {
@@ -17,6 +17,7 @@ const ScrollToTop = () => {
   const scrollUp = () => {
     window.scrollTo({
       top: 0,
+      left: 0,
       behavior: "smooth",
     });
   };
@@ -25,7 +26,7 @@ const ScrollToTop = () => {
     <>
       {scrollToTop && (
         <div
-          className="fixed bottom-5 right-5 z-[9999] grid h-9 w-9 place-items-center rounded-full bg-white outline outline-1 outline-white xl:outline-none drop-shadow-lg"
+          className="fixed bottom-5 right-5 z-[9999] grid h-9 w-9 place-items-center rounded-full bg-white outline outline-1 outline-white drop-shadow-lg xl:outline-none"
           onClick={scrollUp}
         >
           <ChevronUpIcon className="h-6 w-6 text-black" strokeWidth={3} />
@@ -35,4 +36,4 @@ const ScrollToTop = () => {
   );
 };
 
-export default ScrollToTop;
+export default ScrollToTopButton;

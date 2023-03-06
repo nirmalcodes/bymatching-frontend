@@ -59,19 +59,19 @@ const Navbar = ({ navLinks }) => {
               </li>
             ))}
           </ul>
-          <a
-            href="https://app.bymatching.se/"
+          <Link
+            to={"https://app.bymatching.se"}
             className="navbar-btn m-4 xl:mx-12 xl:my-0 xl:hidden"
           >
             {t("Log in")}
-          </a>
+          </Link>
         </nav>
-        <a
-          href="https://app.bymatching.se/"
+        <Link
+          to={"https://app.bymatching.se"}
           className="navbar-btn hidden px-12 xl:inline-block"
         >
           {t("Log in")}
-        </a>
+        </Link>
         <div
           className={`backdrop ${
             navToggle ? "-translate-y-0" : "-translate-y-full"

@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import LanguageChanger from "../LanguageChanger/LanguageChanger";
-import ScrollToTop from "../ScrollToTop/ScrollToTop";
+import ScrollToTop from "../ScrollToTopButton/ScrollToTopButton";
 
 const navLinksList = [
   {

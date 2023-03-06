@@ -2,8 +2,8 @@ import React from "react";
 import { images } from "../../constants";
 
 const ImageContentRow = (props) => {
-  const printableText = props.content.replace(/(?:\r\n|\r|\n)/g, "<br />");
-  const dangerousText = { __html: printableText };
+  const rawText = props.content.replace(/(?:\r\n|\r|\n)/g, "<br />");
+  const formattedText = { __html: rawText };
   return (
     <>
       {props.inverted === true ? (
@@ -25,7 +25,7 @@ const ImageContentRow = (props) => {
             <div className="mb-3 h-[2px] w-[104px] bg-[#FF00FF]" />
             <p
               className=" pr-20 font-medium"
-              dangerouslySetInnerHTML={dangerousText}
+              dangerouslySetInnerHTML={formattedText}
             />
           </div>
         </div>
@@ -48,7 +48,7 @@ const ImageContentRow = (props) => {
             <div className="mb-3 h-[2px] w-[104px] bg-[#FF00FF]" />
             <p
               className=" pr-20 font-medium"
-              dangerouslySetInnerHTML={dangerousText}
+              dangerouslySetInnerHTML={formattedText}
             />
           </div>
         </div>
