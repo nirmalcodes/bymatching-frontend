@@ -52,6 +52,7 @@ const Navbar = ({ navLinks }) => {
                       ? "opacity-100 after:w-full"
                       : ""
                   }`}
+                  onClick={() => setNavToggle(false)}
                   key={`link-${index}`}
                 >
                   {t(navLink.name)}
