@@ -8,9 +8,17 @@ module.exports = {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(-100%)" },
         },
+        moveDown: {
+          "80%": { opacity: 0.5 },
+          "100%": {
+            transform: "translateY(1.75rem)",
+            opacity: 0,
+          },
+        },
       },
       animation: {
         "logo-looper": "looper 30s linear infinite",
+        "move-down": "moveDown 2s infinite",
       },
     },
   },
